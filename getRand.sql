@@ -1,3 +1,4 @@
+delimiter $$
 CREATE DEFINER = CURRENT_USER FUNCTION `getRand` ( `counts` INTEGER ) RETURNS VARCHAR ( 20 ) BEGIN
 DECLARE
 	sTemp VARCHAR ( 20 );
@@ -21,3 +22,4 @@ IF
 END IF;
 RETURN sTemp;
 END;
+delimiter ;
